@@ -62,7 +62,6 @@ export default function Home() {
           Learn more
         </a>
       </div>
-
       <Container>
         <div className="card-deck">
           {data.map(item => (

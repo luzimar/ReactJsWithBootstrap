@@ -10,10 +10,8 @@ export default function Navbar() {
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <Link to="/" style={{ textDecoration: 'none' }}>
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+      <Link to="/" style={{ textDecoration: 'none' }} className="navbar-brand">
+        Navbar
       </Link>
       <button
         className="navbar-toggler"
@@ -29,13 +27,16 @@ export default function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
-          </Link>
+          <li className="nav-item active">
+            <Link
+              to="/"
+              style={{ textDecoration: 'none' }}
+              className="nav-link"
+            >
+              Home <span className="sr-only">(current)</span>
+            </Link>
+          </li>
+
           <li className="nav-item">
             <a className="nav-link" href="#">
               Link
@@ -54,10 +55,13 @@ export default function Navbar() {
               style={{ display: showDrop ? 'block' : 'none' }}
               aria-labelledby="navbarDropdown"
             >
-              <Link to="/details" style={{ textDecoration: 'none' }}>
-                <a className="dropdown-item" href="#" onClick={handleDrop}>
-                  Action
-                </a>
+              <Link
+                to="/details"
+                style={{ textDecoration: 'none' }}
+                className="dropdown-item"
+                onClick={handleDrop}
+              >
+                Action
               </Link>
 
               <a className="dropdown-item" href="#">
