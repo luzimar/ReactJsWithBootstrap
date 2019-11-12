@@ -38,9 +38,9 @@ export default function Navbar() {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Link
-            </a>
+            <Link to="/dashboard" className="nav-link" href="#">
+              Dashboard
+            </Link>
           </li>
           <li className="nav-item dropdown">
             <a

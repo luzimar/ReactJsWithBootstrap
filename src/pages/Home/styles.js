@@ -4,13 +4,13 @@ export const Container = styled.div`
   margin: 40px 30px;
   .card {
     border: none;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
     overflow: hidden;
     height: 100%;
   }
 
   .card:hover {
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 30px 1px rgba(0, 0, 0, 0.6);
   }
   .card:hover .card-img-overlay {
     background: linear-gradient(to bottom, transparent, black);
